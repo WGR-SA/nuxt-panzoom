@@ -26,7 +26,9 @@ In your template, add the panzoom directive to the element you want to make zoom
 </template>
 ```
 
+
 ### Add options to the directive
+
 
 ```
 <template>
@@ -36,14 +38,7 @@ In your template, add the panzoom directive to the element you want to make zoom
 </template>
 ```
 
-The v-panzoom directive accepts an options object, which can include any of the following properties:
-
-- `zoomFactor`: The amount by which the element should be zoomed in or out with each zoom event.
-- `zoomOnDoubleClick`: When set to true, double-clicking on the element will zoom it in.
-- `minZoom`: The minimum zoom level allowed for the element.
-- `maxZoom`: The maximum zoom level allowed for the element.
-
-You can find all the options available in the panzoom library documentation https://github.com/timmywil/panzoom
+The v-panzoom directive accepts an options object. You can find all the options available in the panzoom library documentation https://github.com/timmywil/panzoom
 
 ## Development
 
