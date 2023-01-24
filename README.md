@@ -26,9 +26,7 @@ In your template, add the panzoom directive to the element you want to make zoom
 </template>
 ```
 
-
-### Add options to the directive
-
+Add options to the directive
 
 ```
 <template>
