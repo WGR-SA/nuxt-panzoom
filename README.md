@@ -31,6 +31,20 @@ In your template, add the panzoom directive to the element you want to make zoom
 
 The v-panzoom directive accepts an options object. You can find all the options available in the panzoom library documentation https://github.com/timmywil/panzoom
 
+## `PanzoomControls`
+
+`PanzoomControls` is a simple controls component. Put it anywhere and pass the element in props. It will show simple zoomIn, zoomOut and reset buttons
+```
+<template>
+  <main>
+    <section>
+      <img ref="zoom" v-panzoom="{ contain: 'outside' }" :src="image">
+    </section>
+    <PanzoomControls v-if="zoom" :el="zoom" />
+  </main>
+</template>
+```
+
 ## Development
 
 - Run `npm run dev:prepare` to generate type stubs.

@@ -19,7 +19,6 @@ onMounted(() => {
   zoomOutButton.value?.addEventListener('click', props.el.panzoom.zoomOut)
   resetButton.value?.addEventListener('click', props.el.panzoom.reset)
 })
-
 </script>
 
 <template>
