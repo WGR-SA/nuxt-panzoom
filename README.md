@@ -12,8 +12,11 @@ Add nuxt-panzoom to the modules section of your nuxt.config.js file:
 ```
 export default {
   modules: [
-    'panzoom'
-  ]
+    '@wgr-sa/nuxt-panzoom'
+  ],
+  panzoom: {
+    addControls: true, // Add PanzoomControls component 
+  }
 }
 ```
 
