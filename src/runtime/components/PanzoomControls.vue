@@ -10,9 +10,9 @@ const props = defineProps<{
   el: PanzoomHtmlElement
 }>()
 
-const zoomInButton = ref<HTMLButtonElement | null>(null)
-const zoomOutButton = ref<HTMLButtonElement | null>(null)
-const resetButton = ref<HTMLButtonElement | null>(null)
+const zoomInButton = ref<HTMLButtonElement>()
+const zoomOutButton = ref<HTMLButtonElement>()
+const resetButton = ref<HTMLButtonElement>()
 
 onMounted(() => {
   zoomInButton.value?.addEventListener('click', props.el.panzoom.zoomIn)
