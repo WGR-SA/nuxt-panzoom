@@ -1,7 +1,7 @@
 <template>
   <main>
-    <section ref="zoom" v-panzoom><!-- ="{ contain: 'inside' }" -->
-      <img src="https://avatars.githubusercontent.com/u/1822085?v=4">
+    <section>
+      <img ref="zoom" v-panzoom="{ contain: 'outside' }" :src="image">
     </section>
     <PanzoomControls v-if="zoom" :el="zoom" />
   </main>
@@ -9,10 +9,14 @@
 
 <script setup>
 import { ref } from 'vue'
+import image from '~/assets/img/image.png'
 const zoom = ref(null)
 </script>
 
 <style>
+  body {
+    margin: 0;
+  }
   section {
     width: 100vw;
     height: 100vh;

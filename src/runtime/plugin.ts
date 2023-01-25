@@ -3,8 +3,9 @@ import Panzoom from '@panzoom/panzoom'
 
 export default defineNuxtPlugin((nuxtApp) => {
   nuxtApp.vueApp.directive('panzoom', {
-    created (el, options) {
-      Panzoom(el, options.value)
+    mounted (el, options) {
+      const panzoom = Panzoom(el, options.value)
+      el.panzoom = panzoom
     }
   })
 })

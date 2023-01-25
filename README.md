@@ -20,18 +20,8 @@ export default {
 In your template, add the panzoom directive to the element you want to make zoomable.
 ```
 <template>
-  <div v-panzoom="options">
-    <img src="image.jpg">
-  </div>
-</template>
-```
-
-Add options to the directive
-
-```
-<template>
-  <div v-panzoom="{zoomFactor: 0.1, zoomOnDoubleClick: true, minZoom: 0.5, maxZoom: 5}" >
-    <img src="image.jpg">
+  <div>
+    <img src="image.jpg" v-panzoom="{ contain: 'outside' }">
   </div>
 </template>
 ```
