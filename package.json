@@ -1,7 +1,7 @@
 {
   "name": "@wgr-sa/nuxt-panzoom",
   "description": "Panzoom wrap for Nuxt 3",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "repository": "https://github.com/WGR-SA/nuxt-panzoom.git",
   "author": "jeanvier",
   "license": "MIT",

@@ -1,4 +1,5 @@
 import { defineNuxtPlugin } from '#app'
+// @ts-ignore
 import Panzoom from '@panzoom/panzoom'
 
 export default defineNuxtPlugin((nuxtApp) => {
