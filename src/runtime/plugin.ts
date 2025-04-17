@@ -1,8 +1,9 @@
 import { defineNuxtPlugin } from '#app'
-// @ts-ignore
-import Panzoom from '@panzoom/panzoom'
 
-export default defineNuxtPlugin((nuxtApp) => {
+export default defineNuxtPlugin(async (nuxtApp) => {
+  const PanzoomModule = await import('@panzoom/panzoom')
+  const Panzoom = PanzoomModule.default || PanzoomModule
+
   nuxtApp.vueApp.directive('panzoom', {
     mounted (el, options) {
       const panzoom = Panzoom(el, options.value)

@@ -1,6 +1,6 @@
 <script lang="ts" setup>
 import { ref, onMounted } from 'vue'
-import { PanzoomObject } from '@panzoom/panzoom'
+import type { PanzoomObject } from '@panzoom/panzoom'
 
 export interface PanzoomHtmlElement extends HTMLAllCollection {
   panzoom: PanzoomObject
